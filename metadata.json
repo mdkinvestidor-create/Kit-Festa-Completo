@@ -1,0 +1,6 @@
+{
+  "name": "Kit Festas - +1000 Kits Prontos para Montar e Vender",
+  "description": "Biblioteca temática com +1.000 modelos prontos para imprimir, montar e vender, mesmo que você nunca tenha trabalhado com kits de festa antes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
