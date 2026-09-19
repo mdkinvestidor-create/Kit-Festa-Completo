@@ -75,3 +75,264 @@ section[data-id="37fc42a3"] {
   overflow: hidden !important;
 }
 
+/* Fix visibility, layout and styling for button "QUERO ADQUIRIR O MEU" (data-id: 4236d3e) */
+.elementor-element-4236d3e {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin: 18px auto 12px auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.elementor-element-4236d3e .elementor-widget-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  text-align: center !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.elementor-element-4236d3e .elementor-button-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.elementor-element-4236d3e .elementor-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: linear-gradient(135deg, #C2185B 0%, #E91E8C 100%) !important;
+  background-color: #E91E8C !important;
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  padding: 14px 32px !important;
+  border-radius: 8px !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(233, 30, 140, 0.45), 3px 3px 10px rgba(0, 0, 0, 0.25) !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  cursor: pointer !important;
+  transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease !important;
+  animation: pulseCta 2s infinite ease-in-out !important;
+  max-width: 95% !important;
+  white-space: nowrap !important;
+}
+
+.elementor-element-4236d3e .elementor-button:hover {
+  transform: scale(1.03) !important;
+  filter: brightness(1.08) !important;
+  box-shadow: 0 6px 20px rgba(233, 30, 140, 0.6), 3px 3px 12px rgba(0, 0, 0, 0.3) !important;
+  color: #ffffff !important;
+}
+
+.elementor-element-4236d3e .elementor-button-text {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 480px) {
+  .elementor-element-4236d3e .elementor-button {
+    font-size: 14px !important;
+    padding: 13px 20px !important;
+  }
+  .elementor-element-4236d3e .elementor-button-text {
+    font-size: 14px !important;
+  }
+}
+
+/* Seção de Entrega Imediata (WhatsApp & E-mail) */
+.elementor-element-eb9f445 {
+  margin: 12px auto 20px auto !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  clear: both !important;
+}
+
+.elementor-element-eb9f445 .elementor-widget-container {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.entrega-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 0 12px !important;
+}
+
+.entrega-pill-card {
+  display: inline-flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px 10px !important;
+  background: #ffffff !important;
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%) !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 9999px !important;
+  padding: 8px 18px !important;
+  box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+  transition: all 0.25s ease !important;
+  max-width: 580px !important;
+}
+
+.entrega-pill-card:hover {
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.08) !important;
+  border-color: #d1d5db !important;
+}
+
+.entrega-label-wrapper {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+}
+
+.entrega-pulse-status {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 10px !important;
+  height: 10px !important;
+  flex-shrink: 0 !important;
+}
+
+.entrega-pulse-circle {
+  position: absolute !important;
+  width: 8px !important;
+  height: 8px !important;
+  background-color: #22c55e !important;
+  border-radius: 9999px !important;
+}
+
+.entrega-pulse-ring {
+  position: absolute !important;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 9999px !important;
+  background-color: rgba(34, 197, 94, 0.4) !important;
+  animation: entregaPulse 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite !important;
+}
+
+@keyframes entregaPulse {
+  0% { transform: scale(0.85); opacity: 0.9; }
+  50% { transform: scale(1.4); opacity: 0.1; }
+  100% { transform: scale(0.85); opacity: 0.9; }
+}
+
+.entrega-texto {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  color: #374151 !important;
+  letter-spacing: -0.1px !important;
+  line-height: 1.4 !important;
+}
+
+.entrega-canais-wrapper {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+
+.entrega-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 4px 11px !important;
+  border-radius: 9999px !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+  transition: transform 0.15s ease !important;
+}
+
+.entrega-badge:hover {
+  transform: translateY(-1px) !important;
+}
+
+.entrega-badge strong {
+  font-weight: 600 !important;
+}
+
+.entrega-badge-whatsapp {
+  background-color: #ecfdf5 !important;
+  border: 1px solid #a7f3d0 !important;
+  color: #047857 !important;
+}
+
+.entrega-badge-email {
+  background-color: #fef2f2 !important;
+  border: 1px solid #fecaca !important;
+  color: #b91c1c !important;
+}
+
+.entrega-divisor {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #6b7280 !important;
+}
+
+.entrega-icon {
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 540px) {
+  .entrega-pill-card {
+    border-radius: 14px !important;
+    padding: 10px 14px !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+  
+  .entrega-texto {
+    font-size: 13px !important;
+    text-align: center !important;
+  }
+  
+  .entrega-badge {
+    font-size: 12.5px !important;
+    padding: 4px 9px !important;
+  }
+  
+  .entrega-divisor {
+    font-size: 12px !important;
+  }
+}
+
+
