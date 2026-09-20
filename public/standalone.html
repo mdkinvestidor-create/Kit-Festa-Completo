@@ -102,25 +102,43 @@
       50% { transform: scale(1.03); }
       100% { transform: scale(1); }
     }
-    @keyframes piscarFaixa {
+    @keyframes piscarTextoLento {
       0%, 100% {
         opacity: 1;
-        background-color: #FF008A;
+        color: #ffffff;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
       }
       50% {
-        opacity: 0.3;
-        background-color: #E91E8C;
+        opacity: 0.2;
+        color: #fee2e2;
+        text-shadow: none;
       }
+    }
+    .data-promo-piscante {
+      display: inline-block !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.5px !important;
     }
     .faixa-topo-piscante,
     .elementor-8430 .elementor-element.elementor-element-2b71f6b {
-      background-color: #FF008A !important;
-      animation: piscarFaixa 1s ease-in-out infinite !important;
+      background-color: #dc2626 !important;
+      background: #dc2626 !important;
+      animation: none !important;
       padding-top: 10px !important;
       padding-bottom: 10px !important;
       position: sticky !important;
       top: 0 !important;
       z-index: 40 !important;
+    }
+    .elementor-8430 .elementor-element.elementor-element-8c727ba .elementor-heading-title {
+      color: #ffffff !important;
+      font-family: "Inter", sans-serif !important;
+      font-size: 15px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.4px !important;
+      text-align: center !important;
+      line-height: 1.3 !important;
+      animation: piscarTextoLento 2s ease-in-out infinite !important;
     }
     .elementor-element-4236d3e .elementor-button,
     .elementor-element-749be9d .elementor-button,
@@ -367,7 +385,7 @@
 				<div class="elementor-element elementor-element-2b71f6b e-con-full e-flex e-con e-parent faixa-topo-piscante" data-id="2b71f6b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-element elementor-element-8c727ba elementor-widget elementor-widget-heading" data-id="8c727ba" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;bounceIn&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default"><img decoding="async" role="img" class="emoji" alt="⏰" src="/assets/images/23f0.svg"> PROMOÇÃO VÁLIDA ATÉ O DIA 18/09/2026 SEXTA-FEIRA</h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">PROMOÇÃO VÁLIDA ATÉ O DIA <span class="data-promo-piscante">19/09/2026</span> SÁBADO</h2>				</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-e600451 e-con-full e-flex e-con e-parent" data-id="e600451" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -961,12 +979,12 @@
 				</div>
 				<div class="elementor-element elementor-element-7451c10 elementor-widget elementor-widget-text-editor" data-id="7451c10" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p style="text-align: center; font-family: 'Poppins', sans-serif; line-height: 1; margin: 0;"><span style="color: #dc2626; text-decoration: line-through; font-size: 15px; font-weight: 500;">De R$67,00</span></p><p style="text-align: center; font-family: 'Poppins', sans-serif; line-height: 1.2; margin: 0;"><span style="color: #16a34a; font-size: 49px; font-weight: 900;">R$27,90</span></p>								</div>
+									<p style="text-align: center; font-family: 'Poppins', sans-serif; line-height: 1; margin: 0;"><span style="color: #dc2626; text-decoration: line-through; font-size: 15px; font-weight: 500;">De R$67,00</span></p><p style="text-align: center; font-family: 'Poppins', sans-serif; line-height: 1.2; margin: 0;"><span style="color: #16a34a; font-size: 49px; font-weight: 900;">R$29,90</span></p>								</div>
 				</div>
 		<div class="elementor-element elementor-element-5f4ed3c e-con-full e-flex e-con e-child" data-id="5f4ed3c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-element elementor-element-67555f6 elementor-widget elementor-widget-heading" data-id="67555f6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Você economiza R$39,10</h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Você economiza R$37,10</h2>				</div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-d642c78 elementor-mobile-align-center elementor-widget-mobile__width-initial elementor-align-center elementor-widget elementor-widget-button" data-id="d642c78" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;bounceIn&quot;}" data-widget_type="button.default">
@@ -996,5 +1014,25 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
   <script src="/assets/js/landing-page.js"></script>
+
+<script>
+(function() {
+  var DAYS = ['DOMINGO', 'SEGUNDA-FEIRA', 'TERÇA-FEIRA', 'QUARTA-FEIRA', 'QUINTA-FEIRA', 'SEXTA-FEIRA', 'SÁBADO'];
+  function updatePromo() {
+    var headingEl = document.querySelector('.elementor-element-8c727ba .elementor-heading-title');
+    if (headingEl) {
+      var d = new Date();
+      var day = String(d.getDate()).padStart(2, '0');
+      var month = String(d.getMonth() + 1).padStart(2, '0');
+      var year = d.getFullYear();
+      var formatted = day + '/' + month + '/' + year;
+      var dow = DAYS[d.getDay()];
+      headingEl.innerHTML = 'PROMOÇÃO VÁLIDA ATÉ O DIA <span class="data-promo-piscante">' + formatted + '</span> ' + dow;
+    }
+  }
+  updatePromo();
+  setInterval(updatePromo, 30000);
+})();
+</script>
 </body>
 </html>

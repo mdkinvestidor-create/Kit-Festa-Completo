@@ -1,25 +1,45 @@
 @import "tailwindcss";
 
-@keyframes piscarFaixa {
+@keyframes piscarTextoLento {
   0%, 100% {
     opacity: 1;
-    background-color: #FF008A;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
   }
   50% {
-    opacity: 0.3;
-    background-color: #E91E8C;
+    opacity: 0.2;
+    color: #fee2e2;
+    text-shadow: none;
   }
+}
+
+.data-promo-piscante {
+  display: inline-block !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px !important;
 }
 
 .faixa-topo-piscante,
 .elementor-8430 .elementor-element.elementor-element-2b71f6b {
-  background-color: #FF008A !important;
-  animation: piscarFaixa 1s ease-in-out infinite !important;
+  background-color: #dc2626 !important;
+  background: #dc2626 !important;
+  animation: none !important;
   padding-top: 10px !important;
   padding-bottom: 10px !important;
   position: sticky !important;
   top: 0 !important;
   z-index: 40 !important;
+}
+
+.elementor-8430 .elementor-element.elementor-element-8c727ba .elementor-heading-title {
+  color: #ffffff !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.4px !important;
+  text-align: center !important;
+  line-height: 1.3 !important;
+  animation: piscarTextoLento 2s ease-in-out infinite !important;
 }
 
 @keyframes maisEscolhidoExplode {

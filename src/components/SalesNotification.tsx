@@ -176,33 +176,33 @@ export default function SalesNotification() {
       aria-live="polite"
       aria-atomic="true"
       style={{ top: `${topOffset}px` }}
-      className={`fixed left-1/2 -translate-x-1/2 z-50 max-w-[360px] w-[calc(100%-2rem)] sm:w-auto transition-all duration-500 ease-out transform ${
+      className={`fixed left-1/2 -translate-x-1/2 z-50 max-w-[324px] w-[calc(100%-2.5rem)] sm:w-auto transition-all duration-500 ease-out transform ${
         isVisible
-          ? 'translate-y-0 opacity-100 scale-100 pointer-events-auto'
-          : '-translate-y-4 opacity-0 scale-95 pointer-events-none'
+          ? 'translate-y-0 opacity-100 scale-90 pointer-events-auto'
+          : '-translate-y-4 opacity-0 scale-[0.85] pointer-events-none'
       }`}
     >
-      <div className="bg-white/95 backdrop-blur-md border border-neutral-200/90 rounded-2xl shadow-xl shadow-neutral-900/15 p-2.5 sm:p-3 flex items-center gap-3 relative text-left select-none">
+      <div className="bg-white/95 backdrop-blur-md border border-neutral-200/90 rounded-2xl shadow-xl shadow-neutral-900/15 p-2 sm:p-2.5 flex items-center gap-2.5 relative text-left select-none">
         {/* Thumbnail with verification badge */}
-        <div className="relative shrink-0 w-11 h-11 rounded-xl overflow-hidden bg-pink-50 border border-pink-100 flex items-center justify-center">
+        <div className="relative shrink-0 w-10 h-10 rounded-xl overflow-hidden bg-pink-50 border border-pink-100 flex items-center justify-center">
           <img
             src="/assets/images/kt-mockups-capa.webp"
             alt="Kit Completo"
             className="w-full h-full object-cover"
           />
           <span className="absolute -bottom-0.5 -right-0.5 bg-emerald-500 text-white rounded-full p-0.5 shadow-sm ring-1 ring-white">
-            <CheckCircle2 className="w-3 h-3" />
+            <CheckCircle2 className="w-2.5 h-2.5" />
           </span>
         </div>
 
         {/* Content */}
-        <div className="flex-1 min-w-0 pr-4">
-          <p className="text-[12.5px] sm:text-[13px] leading-tight text-neutral-800">
+        <div className="flex-1 min-w-0 pr-3.5">
+          <p className="text-[11.5px] sm:text-[12px] leading-tight text-neutral-800">
             <strong className="font-bold text-neutral-950">{currentNotification.name}</strong> acabou de comprar o{' '}
             <span className="text-[#e91e8c] font-semibold">kit completo</span>
           </p>
-          <p className="flex items-center gap-1.5 mt-0.5 text-[11px] text-neutral-500">
-            <span className="truncate max-w-[180px] text-neutral-600 font-medium">
+          <p className="flex items-center gap-1 mt-0.5 text-[10px] text-neutral-500">
+            <span className="truncate max-w-[160px] text-neutral-600 font-medium">
               📍 {currentNotification.city}
             </span>
             <span className="text-neutral-300">•</span>
@@ -215,9 +215,9 @@ export default function SalesNotification() {
           type="button"
           onClick={handleManualClose}
           aria-label="Fechar notificação de compra"
-          className="absolute top-2 right-2 text-neutral-400 hover:text-neutral-700 transition-colors p-1 rounded-full hover:bg-neutral-100"
+          className="absolute top-1.5 right-1.5 text-neutral-400 hover:text-neutral-700 transition-colors p-1 rounded-full hover:bg-neutral-100"
         >
-          <X className="w-3.5 h-3.5" />
+          <X className="w-3 h-3" />
         </button>
       </div>
     </aside>

@@ -28,6 +28,6 @@ export function getPromoDateDetails(date = new Date()) {
     dayOfWeek,
     formattedDate,
     fullText,
-    bannerHtml: `<img decoding="async" role="img" class="emoji" alt="⏰" src="/assets/images/23f0.svg"> ${fullText}`
+    bannerHtml: `PROMOÇÃO VÁLIDA ATÉ O DIA <span class="data-promo-piscante">${formattedDate}</span> ${dayOfWeek}`
   };
 }
