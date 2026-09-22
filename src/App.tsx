@@ -95,19 +95,22 @@ export default function App() {
           }
         }
 
-        // 2. Initialize Swiper 2 (Testimonials Carousel)
+        // 2. Initialize Swiper 2 (Testimonials Carousel - Continuous slow glide from right to left)
         const swiper2El = document.querySelector('.elementor-element-fdf642b .swiper');
         if (swiper2El && !swiper2Instance) {
           try {
             swiper2Instance = new window.Swiper(swiper2El, {
               slidesPerView: 2,
-              spaceBetween: 6,
+              spaceBetween: 8,
               loop: true,
-              grabCursor: true,
+              speed: 5500,
               autoplay: {
-                delay: 3500,
+                delay: 0,
                 disableOnInteraction: false,
+                pauseOnMouseEnter: false,
               },
+              allowTouchMove: true,
+              grabCursor: true,
               pagination: {
                 el: '.elementor-element-fdf642b .swiper-pagination',
                 clickable: true,
@@ -115,7 +118,7 @@ export default function App() {
               breakpoints: {
                 640: {
                   slidesPerView: 3,
-                  spaceBetween: 10,
+                  spaceBetween: 12,
                 },
                 1024: {
                   slidesPerView: 4,

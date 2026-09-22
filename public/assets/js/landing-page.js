@@ -23,7 +23,7 @@
         const year = now.getFullYear();
         const dayOfWeek = DAYS_OF_WEEK[now.getDay()];
         const fullText = `PROMOÇÃO VÁLIDA ATÉ O DIA ${day}/${month}/${year} ${dayOfWeek}`;
-        const bannerHtml = `<img decoding="async" role="img" class="emoji" alt="⏰" src="/assets/images/23f0.svg"> ${fullText}`;
+        const bannerHtml = `PROMOÇÃO VÁLIDA ATÉ O DIA <span class="data-promo-piscante">${day}/${month}/${year}</span> ${dayOfWeek}`;
 
         if (headingEl.innerHTML !== bannerHtml) {
           headingEl.innerHTML = bannerHtml;
@@ -97,19 +97,22 @@
       console.warn('Swiper 1 init error:', e);
     }
 
-    // 2. Initialize Swiper 2 (Social Proof Testimonials Carousel)
+    // 2. Initialize Swiper 2 (Social Proof Testimonials Carousel - Slow continuous glide right-to-left)
     try {
       const swiper2El = document.querySelector('.elementor-element-fdf642b .swiper');
       if (swiper2El && window.Swiper) {
         new window.Swiper(swiper2El, {
           slidesPerView: 2,
-          spaceBetween: 6,
+          spaceBetween: 8,
           loop: true,
-          grabCursor: true,
+          speed: 5500,
           autoplay: {
-            delay: 3500,
+            delay: 0,
             disableOnInteraction: false,
+            pauseOnMouseEnter: false,
           },
+          allowTouchMove: true,
+          grabCursor: true,
           pagination: {
             el: '.elementor-element-fdf642b .swiper-pagination',
             clickable: true,
@@ -117,7 +120,7 @@
           breakpoints: {
             640: {
               slidesPerView: 3,
-              spaceBetween: 10,
+              spaceBetween: 12,
             },
             1024: {
               slidesPerView: 4,
